@@ -1,0 +1,7 @@
+{
+  "metadata": {
+    "train_period": "2024-01-01 to 2024-03-29",
+    "test_period": "2024-04-01 to 2024-06-28"
+  },
+  "configs": {}
+}

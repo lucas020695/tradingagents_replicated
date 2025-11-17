@@ -1,0 +1,31 @@
+{
+  "metadata": {},
+  "configs": {
+    "A_Baseline": {
+      "config": {
+        "description": "Original (0.2 position scale, no hysteresis)",
+        "use_fundamentals": false
+      },
+      "q1_cr": 0.0072829551903516405,
+      "q2_cr": -0.0033358756135731527,
+      "q1_sharpe": 0.4687884817638932,
+      "q2_sharpe": -2.7933910707653684,
+      "delta": 0.010618830803924794,
+      "trades_q1": 141,
+      "trades_q2": 176
+    },
+    "B_WithFundamentals": {
+      "config": {
+        "description": "Add real fundamentals",
+        "use_fundamentals": true
+      },
+      "q1_cr": 0.013903235193664005,
+      "q2_cr": -0.012747589091188274,
+      "q1_sharpe": 1.3191915559767784,
+      "q2_sharpe": -2.5005702950554047,
+      "delta": 0.026650824284852277,
+      "trades_q1": 134,
+      "trades_q2": 156
+    }
+  }
+}
