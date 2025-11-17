@@ -1,0 +1,26 @@
+"""
+FIXED: Import the concrete QuantRiskManager from the original quant_only module.
+"""
+
+# Em quant_only_configurable.py, linha ~427, mude:
+
+# DE:
+"""
+risk_managers = {
+    "conservative": RiskManagerAgent("conservative"),
+    "neutral": RiskManagerAgent("neutral"),
+    "aggressive": RiskManagerAgent("aggressive"),
+}
+"""
+
+# PARA:
+"""
+# Import the concrete implementation from original module
+from src.approaches.quant_only.quant_only import QuantRiskManager
+
+risk_managers = {
+    "conservative": QuantRiskManager("conservative"),
+    "neutral": QuantRiskManager("neutral"),
+    "aggressive": QuantRiskManager("aggressive"),
+}
+"""
